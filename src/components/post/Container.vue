@@ -1,14 +1,14 @@
 <template>
   <div class="col-lg-10 directory-blocks">
-      <Post/>
+      <PostItem/>
   </div>
 </template>
 
 <script>
-import Post from "./Post.vue"
+import PostItem from "./Post.vue"
 export default {
   components: {
-      Post
+      PostItem
   }
 }
 </script>

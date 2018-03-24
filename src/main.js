@@ -1,9 +1,11 @@
 import Vue from 'vue'
-import Container from './components/post/Container.vue'
+import App from './components/App.vue'
+
+Vue.prototype.$store = new Vue();
 
 const app = new Vue({
   el: '#app',
-  render: h => h(Container)
+  render: h => h(App)
 });
 
 export default app
