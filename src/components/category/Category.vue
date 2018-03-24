@@ -1,10 +1,13 @@
 <template>
-    <ul v-if="categories && categories.length">
-        <li v-for="cat of categories" :key="cat.id">
-            <a href="#" :data-id="cat.id" @click.prevent="sendId">{{cat.name}}</a>
-            <span class="cat-count">{{cat.count}}</span>
-        </li>
-    </ul>
+    <div>
+        <h3>Categories</h3>
+        <ul v-if="categories && categories.length">
+            <li v-for="cat of categories" :key="cat.id">
+                <a href="#" :data-id="cat.id" @click.prevent="sendId">{{cat.name}}</a>
+                <span class="cat-count">{{cat.count}}</span>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
