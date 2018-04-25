@@ -1,5 +1,5 @@
 <template>
-    <li>
+    <li v-if="category.count">
         <a href="#" @click.prevent="clickHandle">{{category.name}}</a>
         <span class="cat-count" >{{category.count}}</span>
     </li>
