@@ -4,29 +4,26 @@
             <Search/>
         </div>
         <div class="row">
-            <CategContainer/>
-            <PostContainer/>
+            <CategoryList />
+            <PostList />
         </div>
         <div class="row">
             <Modal/>
-            <CreateForm/>
         </div>
     </div>
 </template>
 
 <script>
-import PostContainer from "../components/post/Container"
-import CategContainer from "../components/category/Container"
-import Modal from "../components/modal/Modal"
-import Search from "../components/form/Searchform"
-import CreateForm from "../components/form/Createpost"
+import PostList from './Main/Main-list'
+import CategoryList from './Sidebar/Category-list'
+import Search from './Search-form/Search'
+import Modal from './Modal/Modal'
 export default {
   components: {
-      PostContainer,
-      CategContainer,
-      Modal,
+      PostList,
+      CategoryList,
       Search,
-      CreateForm
+      Modal
   }
 }
 </script>

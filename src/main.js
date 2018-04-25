@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import App from './components/App.vue'
+import VueResource from 'vue-resource'
+import VModal from 'vue-js-modal'
 
-Vue.prototype.$store = new Vue();
+
+Vue.use(VueResource)
+Vue.use(VModal, { dynamic: true })
 
 const app = new Vue({
-  el: '#app',
+  el: '#appDir',
   render: h => h(App)
 });
 
